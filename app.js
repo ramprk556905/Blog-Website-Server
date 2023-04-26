@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
+/*
 mongoose.set('strictQuery',false);
 const connectDB = async() =>{
   try{
@@ -28,7 +28,7 @@ console.log(error);
 process.exit(1);
   }
 }
-
+*/
 mongoose.connect("mongodb+srv://ramprk97:Blog-123@blog-website.u0cx2fd.mongodb.net/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
